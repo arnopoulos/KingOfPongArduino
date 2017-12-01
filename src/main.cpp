@@ -26,7 +26,7 @@ void setup() {
     Serial.println("Wi-Fi connected");
     Serial.println(WiFi.localIP());
 
-    PingPongServer *server = new PingPongServer(team1);
+    PingPongServer *server = new PingPongServer(team2);
 
     button = new Button(buttonPin);
     button->setDelegate(server);
